@@ -1,0 +1,98 @@
+\documentclass[withoutpreface,bwprint]{cumcmthesis} %去掉封面与编号页
+\usepackage{url}%引用网站
+\usepackage{cite}%引用参考文献
+\usepackage{graphicx}
+\usepackage{pdflscape}
+\usepackage{lscape}
+\usepackage{tabularx}
+\usepackage{afterpage}
+\usepackage{longtable}
+
+\usepackage[numbers,sort&compress]{natbib}
+
+\usepackage[figuresright]{rotating}
+\usepackage{listings}
+\usepackage{ctex}
+
+% 设置代码样式
+\lstset{
+	numbers             =   left,               % 行号显示在左侧
+	showspaces          =   false,              % 不显示空格符号
+	numberstyle         =   \zihao{-5}\ttfamily,% 行号风格，小五号，等宽字体
+	showstringspaces    =   false,              % 不显示字符串中的空格
+	captionpos          =   t,                  % 标题位置在顶部
+	frame               =   lrtb,               % 显示四周边框
+	breaklines          =   true,               % 自动换行
+	columns             =   fixed,              % 固定列宽
+	basewidth           =   0.5em,              % 基础宽度
+	caption             =   \raggedright,       % 标题左对齐
+}
+
+% Python 代码样式
+\lstdefinestyle{Python}{
+	language        =   Python, % 语言设为Python
+	basicstyle      =   \zihao{-5}\ttfamily\color{black}, % 基本风格，小五号，等宽字体，黑色
+	keywordstyle    =   \color{blue}\bfseries\itshape, % 关键字风格，蓝色加粗斜体
+	stringstyle     =   \color{magenta}, % 字符串风格，洋红色
+	commentstyle    =   \color{red}\itshape, % 注释风格，红色斜体
+}
+
+% MATLAB 代码样式
+\lstdefinestyle{MATLAB}{
+	language        =   Matlab, % 语言设为MATLAB
+	basicstyle      =   \zihao{-5}\ttfamily\color{black}, % 基本风格，小五号，等宽字体，黑色
+	keywordstyle    =   \color{green}\bfseries\itshape, % 关键字风格，绿色加粗斜体
+	stringstyle     =   \color{purple}, % 字符串风格，紫色
+	commentstyle    =   \color{gray}\itshape, % 注释风格，绿色斜体
+}
+
+
+
+\usepackage{xcolor}
+\usepackage{multicol}
+
+\usepackage{booktabs}
+\usepackage{hyperref}
+\usepackage{subcaption}
+\usepackage {float} 
+\usepackage{array}
+\hypersetup{hidelinks,
+	colorlinks=true,
+	allcolors=black,
+	pdfstartview=Fit,
+	breaklinks=true
+}
+\usepackage{siunitx}
+
+\title{基于主要模型对关键词的研究}
+%\tihao{A}					%题号
+%\baominghao{4321}			%报名号
+%\schoolname{BIT}			%学校
+%\yearinput{2021}			%年份
+%\monthinput{08}			%月份
+%\dayinput{10}				%日期
+
+\begin{document}
+
+
+\include{abstract}%摘要和问题重述  abstract.tex
+%\include{ProblemRestatement}%插入问题重述   ProblemRestatement.tex
+
+
+\include{ProblemAnalysis}%插入问题分析    ProblemAnalysis.tex
+
+\include{ModelHypothesisAndSymbolDescription}%插入模型假设及符号说明   ModelHypothesisAndSymbolDescription.tex
+
+\include{TheEstablishmentAndSolutionOfTheModel} %插入模型的建立与求解   TheEstablishmentAndSolutionOfTheModel.tex
+
+
+\include{ErrorAnalysis} %插入误差分析   ErrorAnalysis.tex
+
+
+\include{Reference} %插入参考文献   Reference.tex
+
+\include{Appendix} %插入附录   Appendix.tex
+
+
+
+\end{document}

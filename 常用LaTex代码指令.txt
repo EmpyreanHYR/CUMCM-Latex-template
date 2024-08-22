@@ -1,0 +1,97 @@
+\section{}  %一级标题
+\subsection{}  %二级标题
+\subsubsection{} %三级标题
+
+\centering  %居中
+
+\caption{}  %标题
+
+\label{}    %标签
+
+\textbf{}   %加粗内容
+\textit{abc}  % 斜体，只对英文有效
+\textbf{\textit{abc}}  %同时使用粗体和斜体
+
+\ref{}      %引用（图、表、公式）
+	
+\textsuperscript{\cite{bib:one}}  %引用参考文献
+
+%多行注释
+\iffalse 
+... （需要被注释段落）
+\fi 
+
+%texstudio中多行注释快捷键
+注释    		Ctrl + T
+去除注释		Ctrl + U
+
+\begin{itemize}  %无序列表
+    \item 
+    \item 
+    \item 
+\end{itemize}
+
+\usepackage{enumerate}  %有序列表
+\begin{enumerate}[1.]  % 可自定义编号样式
+    \item 
+    \item 
+    \item 
+    \item
+\end{enumerate}
+
+\begin{enumerate}[\bfseries \textit{XXX} 1:]  %开头是“XXX＋序号”的退位表格
+	\item	\\  %如果不想退位，可删除\\
+	\item	\\
+	\item 	\\
+\end{enumerate}
+
+%给公式外围加框
+\boxed{            
+}
+
+
+\toprule  % 顶部线
+\midrule  % 中部线
+\bottomrule  % 底部线
+
+\include{fileName} %插入新的tex文件
+
+%引用代码宏包
+\usepackage{listings}
+% 设置代码样式
+\lstset{
+	numbers             =   left,               % 行号显示在左侧
+	showspaces          =   false,              % 不显示空格符号
+	numberstyle         =   \zihao{-5}\ttfamily,% 行号风格，小五号，等宽字体
+	showstringspaces    =   false,              % 不显示字符串中的空格
+	captionpos          =   t,                  % 标题位置在顶部
+	frame               =   lrtb,               % 显示四周边框
+	breaklines          =   true,               % 自动换行
+	columns             =   fixed,              % 固定列宽
+	basewidth           =   0.5em,              % 基础宽度
+	caption             =   \raggedright,       % 标题左对齐
+}
+
+% Python 代码样式
+\lstdefinestyle{Python}{
+	language        =   Python, % 语言设为Python
+	basicstyle      =   \zihao{-5}\ttfamily\color{black}, % 基本风格，小五号，等宽字体，黑色
+	keywordstyle    =   \color{blue}\bfseries\itshape, % 关键字风格，蓝色加粗斜体
+	stringstyle     =   \color{magenta}, % 字符串风格，洋红色
+	commentstyle    =   \color{red}\itshape, % 注释风格，红色斜体
+}
+
+% MATLAB 代码样式
+\lstdefinestyle{MATLAB}{
+	language        =   Matlab, % 语言设为MATLAB
+	basicstyle      =   \zihao{-5}\ttfamily\color{black}, % 基本风格，小五号，等宽字体，黑色
+	keywordstyle    =   \color{green}\bfseries\itshape, % 关键字风格，绿色加粗斜体
+	stringstyle     =   \color{purple}, % 字符串风格，紫色
+	commentstyle    =   \color{gray}\itshape, % 注释风格，绿色斜体
+}
+
+% 插入Python代码
+\lstinputlisting[style=Python, caption={Python Example}]{code/code_example.py}
+
+% 插入MATLAB代码
+\lstinputlisting[style=MATLAB, caption={MATLAB Example}]{code/code_example.m}
