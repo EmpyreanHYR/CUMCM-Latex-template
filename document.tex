@@ -1,19 +1,29 @@
 \documentclass[withoutpreface,bwprint]{cumcmthesis} %去掉封面与编号页
-\usepackage{url}%引用网站
-\usepackage{cite}%引用参考文献
-\usepackage{graphicx}
-\usepackage{pdflscape}
-\usepackage{lscape}
-\usepackage{tabularx}
-\usepackage{afterpage}
-\usepackage{longtable}
+\usepackage{url} % 支持网址链接，便于引用网络资源
+\usepackage{cite} % 优化参考文献引用格式
+\usepackage{graphicx} % 插入和管理图片
+\usepackage{pdflscape} % 使页面横向显示，适合宽表格
+\usepackage{lscape} % 旋转页面内容，适合横向表格或图片
+\usepackage{tabularx} % 支持自动调整宽度的表格
+\usepackage{afterpage} % 控制内容在下一页显示
+\usepackage{longtable} % 支持跨页长表格
 
-\usepackage[numbers,sort&compress]{natbib}
+\usepackage[numbers,sort&compress]{natbib} % 参考文献排序与压缩显示
 
-\usepackage[figuresright]{rotating}
-\usepackage{listings}
-\usepackage{ctex}
+\usepackage[figuresright]{rotating} % 支持图表旋转
 
+
+\usepackage{amsmath} % 数学公式增强
+\usepackage{amssymb} % 更多数学符号
+\usepackage{geometry} % 页面边距自定义
+\usepackage{enumitem} % 列表样式自定义
+\usepackage{caption} % 图表标题样式自定义
+\usepackage{fancyhdr} % 页眉页脚自定义
+\usepackage{titlesec} % 章节标题样式自定义
+
+\usepackage{ctex} % 中文支持，适合中文文档
+
+\usepackage{listings} % 插入和高亮显示代码
 % 设置代码样式
 \lstset{
 	numbers             =   left,               % 行号显示在左侧
@@ -48,29 +58,29 @@
 
 
 
-\usepackage{xcolor}
-\usepackage{multicol}
+\usepackage{xcolor} % 颜色支持，代码和表格可用
+\usepackage{multicol} % 多栏排版
 
-\usepackage{booktabs}
-\usepackage{hyperref}
-\usepackage{subcaption}
-\usepackage {float} 
-\usepackage{array}
+\usepackage{booktabs} % 优美的表格线
+\usepackage{hyperref} % 支持PDF跳转、超链接
+\usepackage{subcaption} % 子图标题，多个图片并排显示
+\usepackage {float}  % 更灵活地控制浮动体（如表格、图片）位置
+\usepackage{array} % 增强表格功能
 \hypersetup{hidelinks,
 	colorlinks=true,
 	allcolors=black,
 	pdfstartview=Fit,
 	breaklinks=true
 }
-\usepackage{siunitx}
+\usepackage{siunitx} % 科学计数法和单位格式化
 
 \title{基于主要模型对关键词的研究}
 %\tihao{A}					%题号
 %\baominghao{4321}			%报名号
 %\schoolname{BIT}			%学校
 %\yearinput{2025}			%年份
-%\monthinput{08}			%月份
-%\dayinput{10}				%日期
+%\monthinput{09}			%月份
+%\dayinput{03}				%日期
 
 \begin{document}
 
