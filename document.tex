@@ -68,30 +68,30 @@
 %\tihao{A}					%题号
 %\baominghao{4321}			%报名号
 %\schoolname{BIT}			%学校
-%\yearinput{2021}			%年份
+%\yearinput{2025}			%年份
 %\monthinput{08}			%月份
 %\dayinput{10}				%日期
 
 \begin{document}
 
 
-\include{abstract}%摘要和问题重述  abstract.tex
-%\include{ProblemRestatement}%插入问题重述   ProblemRestatement.tex
+\input{texfile/1abstract}%摘要  abstract.tex
 
+\input{texfile/2ProblemRestatement}%插入问题重述   ProblemRestatement.tex
 
-\include{ProblemAnalysis}%插入问题分析    ProblemAnalysis.tex
+\input{texfile/3ProblemAnalysis}%插入问题分析    ProblemAnalysis.tex
 
-\include{ModelHypothesisAndSymbolDescription}%插入模型假设及符号说明   ModelHypothesisAndSymbolDescription.tex
+\input{texfile/4AssumptionAndSign}%插入模型假设及符号说明  AssumptionAndSign.tex
 
-\include{TheEstablishmentAndSolutionOfTheModel} %插入模型的建立与求解   TheEstablishmentAndSolutionOfTheModel.tex
+\input{texfile/5MakeModel} %插入模型的建立与求解   MakeModel.tex
 
+\input{texfile/6ErrorAnalysis} %插入误差分析   ErrorAnalysis.tex
 
-\include{ErrorAnalysis} %插入误差分析   ErrorAnalysis.tex
+\input{texfile/7ModelEvaluation} %插入模型评价	ModelEvaluation.tex
 
+\input{texfile/8Reference} %插入参考文献   Reference.tex
 
-\include{Reference} %插入参考文献   Reference.tex
-
-\include{Appendix} %插入附录   Appendix.tex
+\input{texfile/9Appendix} %插入附录   Appendix.tex
 
 
 
