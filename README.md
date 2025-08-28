@@ -2,6 +2,10 @@
 
 数学建模国赛（CUMCM）LaTeX模板，适用于中国大学生数学建模竞赛论文撰写，支持中文、公式、代码、参考文献、自动目录等。
 
+## 关于2025年新规定的AI工具使用详情报告模板
+
+为可能的AI工具使用，提供了一个参考模板，详情可参见仓库 [CUMCM-AI-Usage-Report]{https://github.com/EmpyreanHYR/CUMCM-AI-Usage-Report}
+
 ## 项目结构
 
 - `document.tex`：主控文件，包含所有章节和宏包设置。
