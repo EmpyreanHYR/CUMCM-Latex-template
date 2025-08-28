@@ -4,7 +4,7 @@
 
 ## 关于2025年新规定的AI工具使用详情报告模板
 
-为可能的AI工具使用，提供了一个参考模板，详情可参见仓库 [CUMCM-AI-Usage-Report](https://github.com/EmpyreanHYR/CUMCM-AI-Usage-Report)
+为可能的AI工具使用，提供了一个参考模板，详情可参见仓库 [CUMCM-AI-Usage-Report](https://github.com/EmpyreanHYR/CUMCM-AI-Usage-Report) 。
 
 ## 项目结构
 
