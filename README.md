@@ -24,7 +24,7 @@
   - `9Appendix.tex`：附录
   - `figures/`：图片资源
 - `常用LaTex代码指令.txt`：常用LaTeX命令备忘
-- `clean.bat`；冗余文件批处理脚本
+- `build.bat`：一键编译脚本（双击即可：XeLaTeX + BibTeX 完整编译，编译后自动清理冗余文件，目录保持干净）
 
 ## 主要功能
 
@@ -44,7 +44,7 @@
 3. 按需编辑 `texfile/` 下各章节内容，图片放入 `figures/` 文件夹。
 4. 参考文献可编辑 `book.bib`，正文引用格式如 `\cite{引用标签}`。
 5. 代码示例可参考 `code/` 文件夹。
-6. 运行 `clean.bat` ，可以清理冗余的文件。
+6. 双击 `build.bat` 一键编译（XeLaTeX → BibTeX → XeLaTeX ×2 → 自动清理辅助文件），或运行 `build.bat clean` 仅清理冗余文件。
 
 ## 依赖宏包
 
